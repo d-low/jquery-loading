@@ -142,7 +142,7 @@
         var self = $.data(this, pluginName);
 
         if (self) {
-          self.init();
+          self.show();
         }
         else {
           self = $.data(this, pluginName, new $.Loading(options, this));
