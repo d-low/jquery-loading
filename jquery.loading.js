@@ -1,9 +1,7 @@
 /**
  * @description Loading overlay plug-in used to place a loading graphic over 
- * over the specified elements.  This plug-in assumes there will be a file
- * named app/asseets/loading_large.gif available in the application.
- * @param options An optional object containing the following parameters:
- * @param options.z-index Use this z-index instead of our default z-index.
+ * over the specified elements. If a background image is not specified in the
+ * parameters a default one, base 64 encoded below, will be used.
  */
 (function( $ ) {
 
