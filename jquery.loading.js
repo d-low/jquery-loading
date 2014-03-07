@@ -107,7 +107,13 @@
 
       this.$loading.fadeOut(
         "fast", 
-        $.proxy(function() { this.$loading.remove(); }, this)
+        $.proxy(function() { 
+          this.$loading.remove(); 
+
+          if (options && options.callback && typeof(options.callback) === 'function') {
+            options.callback();
+          }
+        }, this)
       );
     }
   };
